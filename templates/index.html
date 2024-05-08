@@ -1,0 +1,14 @@
+{% extends "base_template.html" %}
+
+{% from 'macros.html' import data_table %}
+
+{% block title %}Calculadora Victory Road{% endblock %}
+
+{% block body %}
+<img src="img/patada.png">
+<img src="img/control.png">
+<table class="table">
+    {{ data_table(headings, data) }}
+</table>
+
+{% endblock %}
